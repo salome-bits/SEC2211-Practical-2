@@ -1,0 +1,53 @@
+Testing server pid 30220 on 127.0.0.1:5051
+----------------------------------------------------------------------
+CASE: valid STATUS
+  sent 7 bytes
+  reply: b'OK uptime=0s events=0 load=0.83\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: valid EVENT
+  sent 30 bytes
+  reply: b'OK id=1\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: unknown command
+  sent 18 bytes
+  reply: b'OK\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: invalid event type
+  sent 23 bytes
+  reply: b'OK id=2\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: log injection (embedded newline)
+  sent 55 bytes
+  reply: b'OK id=3\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: control characters
+  sent 32 bytes
+  reply: b'OK id=4\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: two requests in one TCP segment
+  sent 13 bytes
+  reply: b'OK events=4\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: huge input, no newline (100000 bytes)
+  sent 100000 bytes
+  reply: b'OK\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: 5 connect-then-disconnect clients
+  server fd count now: 9  (growth = descriptor leak)
+----------------------------------------------------------------------
+CASE: idle client blocks everyone else?
+  second client got reply after 8.0s: b'<no reply within 8s>'
+  -> BLOCKED by idle client (availability weakness)
+----------------------------------------------------------------------
+CASE: oversized detail (200 bytes)
+  sent 220 bytes
+  reply: b'OK id=5\n'
+  server alive: True   server fd count: 10 -> 10

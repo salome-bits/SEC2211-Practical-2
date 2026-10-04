@@ -1,0 +1,53 @@
+Testing server pid 30431 on 127.0.0.1:5051
+----------------------------------------------------------------------
+CASE: valid STATUS
+  sent 7 bytes
+  reply: b'OK uptime=1s events=0 load=0.83\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: valid EVENT
+  sent 30 bytes
+  reply: b'OK id=1\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: unknown command
+  sent 18 bytes
+  reply: b'ERR 400 unknown command\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: invalid event type
+  sent 23 bytes
+  reply: b'ERR 422 unknown event type\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: log injection (embedded newline)
+  sent 55 bytes
+  reply: b'OK id=2\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: control characters
+  sent 32 bytes
+  reply: b'ERR 422 illegal character\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: two requests in one TCP segment
+  sent 13 bytes
+  reply: b'OK events=3\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: huge input, no newline (100000 bytes)
+  sent 100000 bytes
+  reply: b'ERR 413 line too long\n'
+  server alive: True   server fd count: 4 -> 4
+----------------------------------------------------------------------
+CASE: 5 connect-then-disconnect clients
+  server fd count now: 4  (growth = descriptor leak)
+----------------------------------------------------------------------
+CASE: idle client blocks everyone else?
+  second client got reply after 5.1s: b'OK uptime=8s events=3 load=0.77\n'
+  -> served once idle client timed out (timeout protects availability)
+----------------------------------------------------------------------
+CASE: oversized detail (200 bytes)
+  sent 220 bytes
+  reply: b'ERR 413 detail length invalid\n'
+  server alive: True   server fd count: 4 -> 4

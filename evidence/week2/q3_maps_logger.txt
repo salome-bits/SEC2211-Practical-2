@@ -1,0 +1,6 @@
+55b1acb56000-55b1acb57000 r--p 00000000 08:01 35786641                   /home/salome/sec2211-lab/sec2211-repo/week2/q3/auditsys
+55b1acb57000-55b1acb58000 r-xp 00001000 08:01 35786641                   /home/salome/sec2211-lab/sec2211-repo/week2/q3/auditsys
+55b1acb58000-55b1acb59000 r--p 00002000 08:01 35786641                   /home/salome/sec2211-lab/sec2211-repo/week2/q3/auditsys
+55b1acb59000-55b1acb5a000 r--p 00002000 08:01 35786641                   /home/salome/sec2211-lab/sec2211-repo/week2/q3/auditsys
+55b1acb5a000-55b1acb5b000 rw-p 00003000 08:01 35786641                   /home/salome/sec2211-lab/sec2211-repo/week2/q3/auditsys
+7fc5e5e30000-7fc5e5ef1000 rw-s 00000000 00:1c 13                         /dev/shm/sec2211_audit_shm

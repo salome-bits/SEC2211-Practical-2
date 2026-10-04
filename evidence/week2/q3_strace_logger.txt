@@ -1,0 +1,15 @@
+strace: Process 39580 attached
+write(4, "ts=1791108810 prod=B seq=29 type"..., 45) = 45
+write(4, "ts=1791108810 prod=C seq=29 type"..., 49) = 49
+write(4, "ts=1791108810 prod=A seq=30 type"..., 45) = 45
+write(4, "ts=1791108810 prod=B seq=30 type"..., 49) = 49
+write(4, "ts=1791108810 prod=C seq=30 type"..., 48) = 48
+write(4, "ts=1791108811 prod=A seq=31 type"..., 49) = 49
+write(4, "ts=1791108811 prod=B seq=31 type"..., 47) = 47
+write(4, "ts=1791108811 prod=C seq=31 type"..., 46) = 46
+write(4, "ts=1791108811 prod=A seq=32 type"..., 47) = 47
+write(4, "ts=1791108811 prod=B seq=32 type"..., 46) = 46
+write(4, "ts=1791108811 prod=C seq=32 type"..., 45) = 45
+write(4, "ts=1791108811 prod=A seq=33 type"..., 46) = 46
+write(4, "ts=1791108811 prod=B seq=33 type"..., 45) = 45
+write(4, "ts=1791108811 prod=C seq=33 type"..., 49) = 49

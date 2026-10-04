@@ -1,0 +1,10 @@
+RESULT mode=UNSAFE expected=1500 lines_in_log=518 missing=985 duplicates=3 corrupt=0 alerts_expected=50 alerts_logged=21
+RESULT mode=UNSAFE expected=1500 lines_in_log=519 missing=982 duplicates=1 corrupt=0 alerts_expected=50 alerts_logged=14
+RESULT mode=UNSAFE expected=1500 lines_in_log=511 missing=991 duplicates=2 corrupt=0 alerts_expected=50 alerts_logged=20
+RESULT mode=UNSAFE expected=1500 lines_in_log=508 missing=996 duplicates=4 corrupt=0 alerts_expected=50 alerts_logged=12
+RESULT mode=UNSAFE expected=1500 lines_in_log=520 missing=980 duplicates=0 corrupt=0 alerts_expected=50 alerts_logged=15
+RESULT mode=SAFE expected=1500 lines_in_log=1511 missing=0 duplicates=11 corrupt=0 alerts_expected=50 alerts_logged=50
+RESULT mode=SAFE expected=1500 lines_in_log=1511 missing=0 duplicates=11 corrupt=0 alerts_expected=50 alerts_logged=51
+RESULT mode=SAFE expected=1500 lines_in_log=1507 missing=0 duplicates=7 corrupt=0 alerts_expected=50 alerts_logged=50
+RESULT mode=SAFE expected=1500 lines_in_log=1506 missing=0 duplicates=6 corrupt=0 alerts_expected=50 alerts_logged=50
+RESULT mode=SAFE expected=1500 lines_in_log=1505 missing=0 duplicates=5 corrupt=0 alerts_expected=50 alerts_logged=50

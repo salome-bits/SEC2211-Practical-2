@@ -1,0 +1,4 @@
+total 780
+-rw------- 1 salome salome 786440 Oct  4 12:13 sec2211_audit_shm
+-rw------- 1 root   root       32 Oct  4 10:50 sem.haveged_sem
+-rw------- 1 salome salome     32 Oct  4 12:13 sem.sec2211_audit_mutex

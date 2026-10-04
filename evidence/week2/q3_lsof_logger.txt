@@ -1,0 +1,14 @@
+COMMAND     PID   USER  FD   TYPE DEVICE SIZE/OFF     NODE NAME
+audit-log 39580 salome cwd    DIR    8,1     4096 35786632 /home/salome/sec2211-lab/sec2211-repo/week2/q3
+audit-log 39580 salome rtd    DIR    8,1     4096        2 /
+audit-log 39580 salome txt    REG    8,1    18384 35786641 /home/salome/sec2211-lab/sec2211-repo/week2/q3/auditsys
+audit-log 39580 salome mem    REG   0,28   786440       13 /dev/shm/sec2211_audit_shm
+audit-log 39580 salome mem    REG    8,1  2014248 38018637 /usr/lib/x86_64-linux-gnu/libc.so.6
+audit-log 39580 salome DEL    REG   0,28                14 /dev/shm/sem.WB8jf2
+audit-log 39580 salome mem    REG    8,1   230200 38018634 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+audit-log 39580 salome   0u   CHR  136,1      0t0        4 /dev/pts/1
+audit-log 39580 salome   1u   CHR  136,1      0t0        4 /dev/pts/1
+audit-log 39580 salome   2u   CHR  136,1      0t0        4 /dev/pts/1
+audit-log 39580 salome   3u   REG   0,28   786440       13 /dev/shm/sec2211_audit_shm
+audit-log 39580 salome   4w   REG    8,1     3621 35786645 /home/salome/sec2211-lab/sec2211-repo/week2/q3/audit.log
+audit-log 39580 salome   5w  FIFO   0,16      0t0   176591 pipe

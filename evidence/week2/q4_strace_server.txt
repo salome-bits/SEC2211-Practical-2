@@ -1,0 +1,7 @@
+strace: Process 28574 attached
+accept(3, {sa_family=AF_INET, sin_port=htons(35312), sin_addr=inet_addr("127.0.0.1")}, [16]) = 4
+recvfrom(4, 0x7ffd46f62d00, 256, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+sendto(4, "ERR 408 timeout\n", 16, MSG_NOSIGNAL, NULL, 0) = 16
+close(4)                                = 0
+accept(3strace: Process 28574 detached
+ <detached ...>

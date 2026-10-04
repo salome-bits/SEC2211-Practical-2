@@ -1,0 +1,14 @@
+# compiled programs (rebuild with make)
+week2/q3/auditsys
+week2/q3/toctou
+week2/q4/server_v1
+week2/q4/server_v2
+week2/q4/server_v1_asan
+week2/q4/server_v2_asan
+week2/q4/client
+week2/q4/byteorder_demo
+# generated files
+*.log
+toctou_dir/
+toctou_strace.txt
+strace_q4.txt
